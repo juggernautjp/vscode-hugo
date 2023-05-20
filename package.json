@@ -1,0 +1,44 @@
+{
+  "name": "vscode-hugo",
+  "displayName": "vscode-hugo",
+  "description": "VS Code Extention for Hugo",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/juggernautjp/vscode-hugo.git"
+  },
+  "keywords": [
+    "Hugo",
+    "VS",
+    "Code",
+    "Extention"
+  ],
+  "author": "juggernautjp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juggernautjp/vscode-hugo/issues"
+  },
+  "homepage": "https://github.com/juggernautjp/vscode-hugo#readme",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hugo",
+      "aliases": ["Hugo", "hugo"],
+      "extensions": [".md"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hugo",
+      "scopeName": "source.hugo",
+      "path": "./syntaxes/hugo.tmLanguage.json"
+    }]
+  }
+}
